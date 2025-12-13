@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Food Ordering - My Orders</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2> Campus Food</h2>
+            <div class="nav-links">
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="cart.html" class="nav-link">
+                    Cart <span id="cartCount" class="cart-badge"></span>
+                </a>
+                <a href="orders.html" class="nav-link active">My Orders</a>
+                <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>My Orders</h1>
+
+        <div id="errorMessage" class="message error"></div>
+
+        <div id="ordersContainer" class="orders-container">
+            <!-- Orders will be loaded here -->
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/orders.js"></script>
+</body>
+</html>
+

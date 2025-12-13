@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Food Ordering - Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2> Campus Food</h2>
+            <div class="nav-links">
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="cart.html" class="nav-link">
+                    Cart <span id="cartCount" class="cart-badge"></span>
+                </a>
+                <a href="orders.html" class="nav-link">My Orders</a>
+                <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Our Menu</h1>
+        
+        <!--  breakfast part -->
+        <section class="featured-section featured-breakfast" data-category="breakfast">
+            <h2>Breakfast Favourites</h2>
+            <div class="breakfast-gallery">
+                <div class="breakfast-item featured-item" data-name="Acai Bowl">
+                    <img src="images/acai bowl.jpg" alt="Acai Bowl">
+                    <p>Acai Bowl</p>
+                </div>
+                <div class="breakfast-item featured-item" data-name="Classic Breakfast">
+                    <img src="images/Breakfast.jpg" alt="Classic Breakfast">
+                    <p>Classic Breakfast</p>
+                </div>
+                <div class="breakfast-item featured-item" data-name="Buttered Toast">
+                    <img src="images/toast.jpg" alt="Buttered Toast">
+                    <p>Buttered Toast</p>
+                </div>
+                <div class="breakfast-item featured-item" data-name="Fluffy Pancakes">
+                    <img src="images/pancake.avif" alt="Fluffy Pancakes">
+                    <p>Fluffy Pancakes</p>
+                </div>
+            </div>
+        </section>
+
+        <!--  This is the lunch part-->
+        <section class="featured-section featured-lunch" data-category="lunch">
+            <h2>Lunch Specials</h2>
+            <div class="lunch-gallery">
+                <div class="lunch-item featured-item" data-name="Rice Bowl">
+                    <img src="images/rice.jpg" alt="Rice Bowl">
+                    <p>Rice Bowl</p>
+                </div>
+                <div class="lunch-item featured-item" data-name="Mac &amp; Cheese">
+                    <img src="images/mac.jpg" alt="Mac &amp; Cheese">
+                    <p>Mac &amp; Cheese</p>
+                </div>
+                <div class="lunch-item featured-item" data-name="Honey Chicken">
+                    <img src="images/honey.jpg" alt="Honey Chicken">
+                    <p>Honey Chicken</p>
+                </div>
+            </div>
+        </section>
+
+        <!--this is dinner part -->
+        <section class="featured-section featured-dinner" data-category="dinner">
+            <h2>Dinner Favourites</h2>
+            <div class="dinner-gallery">
+                <div class="dinner-item featured-item" data-name="Quesadilla">
+                    <img src="images/quesa.jpg" alt="Quesadilla">
+                    <p>Quesadilla</p>
+                </div>
+                <div class="dinner-item featured-item" data-name="Grilled Chicken">
+                    <img src="images/chicken.avif" alt="Grilled Chicken">
+                    <p>Grilled Chicken</p>
+                </div>
+                <div class="dinner-item featured-item" data-name="Cheeseburger">
+                    <img src="images/burger.jpg" alt="Cheeseburger">
+                    <p>Cheeseburger</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The snack part -->
+        <section class="featured-section featured-snacks" data-category="snacks">
+            <h2>Snacks &amp; Treats</h2>
+            <div class="snacks-gallery">
+                <div class="snacks-item featured-item" data-name="Prime Drink">
+                    <img src="images/prime.webp" alt="Prime Drink">
+                    <p>Prime Drink</p>
+                </div>
+                <div class="snacks-item featured-item" data-name="KitKat Bar">
+                    <img src="images/kitkat.jpg" alt="KitKat Bar">
+                    <p>KitKat Bar</p>
+                </div>
+                <div class="snacks-item featured-item" data-name="Lays Chips">
+                    <img src="images/lays.jpg" alt="Lays Chips">
+                    <p>Lays Chips</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="breakfast">Breakfast</button>
+            <button class="filter-btn" data-category="lunch">Lunch</button>
+            <button class="filter-btn" data-category="dinner">Dinner</button>
+            <button class="filter-btn" data-category="snacks">Snacks</button>
+            <button class="filter-btn" data-category="beverages">Beverages</button>
+        </div>
+
+        <div id="errorMessage" class="message error"></div>
+        <div id="successMessage" class="message success"></div>
+
+        <div id="menuGrid" class="menu-grid">
+            <!-- The menu items will be loaded here -->
+        </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
+
