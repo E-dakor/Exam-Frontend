@@ -1,6 +1,6 @@
 // API Configuration
 // Backend is running from backend/server.js on port 5000
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://exam-backend-hs3q.onrender.com/api';
 
 
 async function apiRequest(endpoint, options = {}) {
